@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { RegisterForm } from "@/components/auth/register-form";
+
+export default function RegisterPage() {
+  return <main className="auth-page"><div className="auth-aside"><Link className="brand" href="/"><span className="brand-mark">VI</span><span>Việt Interview Pro</span></Link><div><p className="eyebrow"><span className="eyebrow-dot" /> Start with clarity</p><h1>Mỗi mục tiêu nghề nghiệp đều xứng đáng có một <em>kế hoạch tốt.</em></h1></div><span className="auth-aside-footer">Chuẩn bị tốt hơn. Tự tin hơn.</span></div><section className="auth-panel"><div className="auth-panel-inner"><Link className="mobile-brand brand" href="/"><span className="brand-mark">VI</span><span>Việt Interview Pro</span></Link><p className="eyebrow">Bắt đầu hành trình</p><h2>Tạo không gian luyện tập của bạn.</h2><p className="auth-intro">Lưu session, theo dõi tiến bộ và xây dựng sự tự tin qua từng lần thực hành.</p><RegisterForm /><p className="auth-switch">Đã có tài khoản? <a href="/login">Đăng nhập</a></p></div></section></main>;
+}

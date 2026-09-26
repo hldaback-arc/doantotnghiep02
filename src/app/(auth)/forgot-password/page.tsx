@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ForgotPasswordForm } from "@/components/auth/forgot-password-form";
+
+export default function ForgotPasswordPage() {
+  return <main className="auth-page"><div className="auth-aside"><Link className="brand" href="/"><span className="brand-mark">VI</span><span>Việt Interview Pro</span></Link><div><p className="eyebrow"><span className="eyebrow-dot" /> Back on track</p><h1>Một bước nhỏ để quay lại với <em>mục tiêu lớn.</em></h1></div><span className="auth-aside-footer">Chuẩn bị tốt hơn. Tự tin hơn.</span></div><section className="auth-panel"><div className="auth-panel-inner"><Link className="mobile-brand brand" href="/"><span className="brand-mark">VI</span><span>Việt Interview Pro</span></Link><p className="eyebrow">Khôi phục tài khoản</p><h2>Đặt lại mật khẩu.</h2><p className="auth-intro">Nhập email đã dùng để đăng ký. Chúng mình sẽ gửi hướng dẫn an toàn cho bạn.</p><ForgotPasswordForm /><p className="auth-switch"><a href="/login">Quay lại đăng nhập</a></p></div></section></main>;
+}
